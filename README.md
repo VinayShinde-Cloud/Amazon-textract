@@ -227,7 +227,8 @@ When working correctly:
 
 ![example Screenshot](https://github.com/VinayShinde-Cloud/Amazon-textract/blob/main/amzn.png)
 
-**CloudWatch Log Output:**
+
+## **CloudWatch Log Output:**
 ```
 Processing invoice: invoice-123.jpg from bucket: source-bucket
 Saved text to configured bucket: textract-project-ml-ai-xxx/invoice-123.txt
