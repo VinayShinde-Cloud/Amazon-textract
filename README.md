@@ -222,6 +222,11 @@ When working correctly:
 6. Processed text saved to output S3 bucket
 7. Success response returned
 
+
+## Example
+
+![example Screenshot](https://github.com/VinayShinde-Cloud/Amazon-textract/blob/main/amzn.png)
+
 **CloudWatch Log Output:**
 ```
 Processing invoice: invoice-123.jpg from bucket: source-bucket
