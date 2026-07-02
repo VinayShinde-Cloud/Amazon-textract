@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2869
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red34\green255\blue6;\red3\green9\blue17;\red251\green0\blue7;
+\red3\green9\blue18;\red0\green0\blue0;\red255\green255\blue255;\red3\green9\blue17;\red3\green9\blue17;
+\red0\green0\blue0;\red195\green29\blue15;\red3\green9\blue18;\red231\green231\blue236;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c100000\c0;\cssrgb\c740\c3498\c8622;\cssrgb\c100000\c12195\c0;
+\cssrgb\c774\c3538\c8661;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99956;\cssrgb\c774\c3538\c8661;\cssrgb\c740\c3498\c8622;
+\cssrgb\c0\c1\c1;\cssrgb\c81703\c19170\c6314;\cssrgb\c774\c3538\c8661;\cssrgb\c92493\c92497\c94112;\cssrgb\c0\c0\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat17\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19700\viewh12920\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa120\partightenfactor0
+
+\fs28 \cf2 \expnd0\expndtw0\kerning0
+Replace the default code in \cf4 Lambda Function\cf2  entirely with the code file and select the\'a0
+\fs25\fsmilli12600 \cf6 Deploy
+\fs28 .
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+In \cf4 DynamoDB\cf2  
+\fs28 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 Type\'a0\cf10 \strokec11 invoices\cf2 \strokec9 \'a0in the\'a0\strokec9 Table name\strokec9 \'a0field\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec9 Type\'a0\cf10 \strokec11 invoice_id\cf2 \strokec9 \'a0in the\'a0\strokec9 Partition key\strokec9 \'a0field and leave every thing default create table.\
+\
+Create two \cf4 \strokec12 S3 Buckets\cf2 \strokec9  One For 
+\f1\b \cf10 \strokec13 textract-ml-ai-
+\f0\b0 \cf2 \strokec9 \
+\
+Keep the S3 bucket empty. Select \strokec9 Properties Tab. Scroll down for Event notifications\
+\
+Create event notification\strokec9 , in the\'a0\strokec9 General configuration\strokec9 , type\'a0\cf10 \strokec11 invoice_processing\cf2 \strokec9 \'a0in the\'a0\strokec9 Event name\strokec9 \'a0field\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa280\partightenfactor0
+\ls1\ilvl0\cf2 \strokec9 {\listtext	17	}In the\'a0\strokec9 Event types\strokec9 \'a0section, select only the checkbox labeled\'a0\cf10 \strokec12 Put\cf10 \strokec12 .\cf2 \strokec9 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec9 In the\'a0\strokec9 Destination\strokec9 \'a0box, expand the\'a0\strokec9 Lambda function\strokec9 \'a0dropdown and choose the\'a0\cf10 \strokec12 invoice_processing\cf2 \strokec9 \'a0function & save changes.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa120\partightenfactor0
+\cf2 \strokec9 \
+Now Upload One By One Two Learn How event is triggered by Put command.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec9 In the top right of the\'a0DynamoDB Check for \strokec9 invoices\strokec9 \'a0table page, select the\'a0
+\fs25\fsmilli12600 \strokec14 Explore table items
+\fs28 \strokec9 .\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \strokec9 Now explore the invoice data including\'a0
+\f3\b \strokec9 line_items
+\f2\b0 \strokec9 \'a0and\'a0
+\f3\b \strokec9 llm_analysis
+\f2\b0 \strokec9 . \
+At this point you have everything stored and well structured. Read carefully the LLM analysis\
+\
+Check the s3 results folder.}
